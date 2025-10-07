@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Ragavan's Web Page</title>
+    <style>
+        /* Full-page background */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Container for the welcome message */
+        .welcome-container {
+            text-align: center;
+            padding: 50px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        /* Glow animation for text */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #00ffea, 0 0 40px #00ffea, 0 0 50px #00ffea, 0 0 60px #00ffea;
+            }
+        }
+
+        /* Fade in effect */
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.8);}
+            to {opacity: 1; transform: scale(1);}
+        }
+
+        /* Button style */
+        a.button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            color: white;
+            background-color: #ff4081;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        a.button:hover {
+            transform: scale(1.1);
+            background-color: #ff79a3;
+        }
+
+    </style>
+</head>
+<body>
+<div class="welcome-container">
+    <h1>Welcome to Ragavan's Web Page</h1>
+    <p>Explore and enjoy this mini Spring Boot website!</p>
+    <a class="button" href="/about">Learn More</a>
+</div>
+</body>
+</html>

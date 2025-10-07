@@ -28,7 +28,7 @@ public class Main {
                "</style>" +
                "</head>" +
                "<body>" +
-               "<h1>Grand Welcome to Ragavan!</h1>" +
+               "<h1>Welcome to Ragavan's java web page</h1>" +
                "</body>" +
                "</html>";
     }
